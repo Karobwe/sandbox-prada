@@ -10,3 +10,9 @@ import './styles/app.css';
 
 // start the Stimulus application
 import './bootstrap';
+
+let btn = document.querySelector('button');
+btn.addEventListener('click', (e) => {
+    console.log('click')
+    document.documentElement.classList.toggle('dark')
+});
